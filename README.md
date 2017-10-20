@@ -6,11 +6,12 @@ Changes the default dark purple color/noise image from lock screen to a color an
 
 ## Usage
 
-1. Open terminal
-2. Grant execution permission using Terminal
-* ```chmod +x ubuntu-gnome-lockscreen-background-changer```
-3. Edit bash script
+1. Grant execution permission using Terminal
+* ```chmod +x ubuntu-gnome-lockscreen-background-changer.sh```
+2. Edit bash script
 + Change color hex code
 + Change image file path
 + Save the script
+3. Run the script using Terminal
+* ```./ubuntu-gnome-lockscreen-background-changer.sh```
 4. Logout and log back in to see the changes
