@@ -6,10 +6,13 @@
 #date: 21/10/2017
 
 #change the value to the hex color code you like
-color=#000000
+color=#424242
 
 #change the file path to the background image you wish to use
-image='/path/to/image.jpg'
+image='/home/hiruna/Pictures/Awesome_Bridge_11658x6112.jpg'
+
+#change to true if you want to reset back to stock
+reset=true
 
 #ubuntu.css location - DO NOT CHANGE
 csslocation='/usr/share/gnome-shell/theme/ubuntu.css'
@@ -27,7 +30,9 @@ fi
 #copy contents of backup file to original
 cp ${cssbaklocation} ${csslocation}
 
+if [ ! reset ] ; then
 #change color and background image as specified by user
 sed -i "/background: #2c001e url(resource:\/\/\/org\/gnome\/shell\/theme\/noise-texture.png);/c\background: $color url(\"$image\");}" ${csslocation}
 sed -i '/background-repeat: repeat; }/c\ ' ${csslocation}
+fi
 
