@@ -12,7 +12,7 @@ color=#424242
 image='/home/hiruna/Pictures/Awesome_Bridge_11658x6112.jpg'
 
 #change to true if you want to reset back to stock
-reset=true
+reset=false
 
 #ubuntu.css location - DO NOT CHANGE
 csslocation='/usr/share/gnome-shell/theme/ubuntu.css'
