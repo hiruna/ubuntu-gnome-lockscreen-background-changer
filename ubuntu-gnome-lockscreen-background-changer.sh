@@ -12,9 +12,9 @@ color=#000000
 image='/path/to/image.jpg'
 
 #ubuntu.css location - DO NOT CHANGE
-csslocation='/home/hiruna/testsed/ubuntu.css'
+csslocation='/usr/share/gnome-shell/theme/ubuntu.css'
 #backup location - DO NOT CHANGE
-cssbaklocation='/home/hiruna/testsed/ubuntu.css.old'
+cssbaklocation='/usr/share/gnome-shell/theme/ubuntu.css.old'
 
 #Exit if any line fails
 set -e
@@ -29,6 +29,5 @@ cp ${cssbaklocation} ${csslocation}
 
 #change color and background image as specified by user
 sed -i "/background: #2c001e url(resource:\/\/\/org\/gnome\/shell\/theme\/noise-texture.png);/c\background: $color url(\"$image\");}" ${csslocation}
-
 sed -i '/background-repeat: repeat; }/c\ ' ${csslocation}
 
